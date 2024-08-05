@@ -1,0 +1,15 @@
+    import pandas as pd
+    import numpy as np
+    import matplotlib.pyplot as plt
+    import seaborn as sns
+    import statsmodels.api as sm
+    %matplotlib inline
+    import warnings
+    import io
+%cd "D:\BITS\Courses\4th SEM\Analytics For Marketing-Marketing Analytics\Assignment"
+Norway=pd.read_excel("P_Data_Extract_From_World_Development_Indicators.xlsx", sheet_name= "Norway")
+Ncodf=Norway[['Year', 'CO2 emissions (metric tons per capita)', 'Current account balance (% of GDP)', 'GDP growth (annual %)', 
+             'GDP per capita growth (annual %)', 'GNI growth (annual %)', 'Imports of goods and services (% of GDP)', 
+             'Inflation, consumer prices (annual %)', 'Inflation, GDP deflator (annual %)', 'Population growth (annual %)', 
+             'Unemployment, total (% of total labor force) (national estimate)']]
+Ncodf.head()
